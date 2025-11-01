@@ -1,0 +1,172 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+
+/* ===== Navbar ===== */
+header {
+  background-color: #3e2723;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d7ccc8;
+}
+
+/* ===== Hero ===== */
+.Home {
+  height: 90vh;
+  background: url("https://i.ibb.co/5M5LJmK/coffee-bg.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.Home::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.teks-home {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.teks-home h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.teks-home span {
+  color: #f5c47a;
+}
+
+.teks-home p {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background: #ffd595;
+  color: #3e2723;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ffe0b2;
+}
+
+/* ===== About ===== */
+.About {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fffaf4;
+}
+
+.About h2 {
+  margin-bottom: 1rem;
+  color: #4e342e;
+}
+
+/* ===== Menu ===== */
+.Menu {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.menu-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.permenu {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  padding-bottom: 1rem;
+  transition: transform 0.3s;
+}
+
+.permenu:hover {
+  transform: translateY(-5px);
+}
+
+.permenu img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.permenu h3 {
+  margin: 1rem 0 0.5rem;
+  color: #4e342e;
+}
+
+/* ===== Contact ===== */
+.Contact {
+  background-color: #3e2723;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #2c1b15;
+  color: #d7ccc8;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
